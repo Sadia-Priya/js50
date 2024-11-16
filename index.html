@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="title" content="Eschool">
+	<meta name="description" content="Site Description">
+	<meta name="keywords" content="blog">
+	<meta name="robots" content="index,follow">
+	<meta name="language" content="English">
+	<meta name="revisit-after" content="7 days">
+	<meta name="author" content="Sadia Islam Khan">
+	<title>JavaScript</title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/media.css">
+</head>
+<body>
+  <div class="container">
+    <!-- exp1 -->
+    <h2>Click the button to show text</h2>
+    <button type="button" class="btn btn-dark" onclick="showTexts()">Show Text</button>
+    <p id="st"></p><hr>
+
+    <!-- exp2 -->
+    <h2>Click the button to Change text</h2>
+    <button type="button" class="btn btn-dark" onclick="changeText()">Change Text</button>
+    <p id="ct">Hello World</p><hr>
+
+    <!-- exp3 -->
+    <h2>Click the button to Display Time</h2>
+    <button type="button" class="btn btn-dark" onclick="displayDateTime()">Display Date Time</button>
+    <p id="ddt">Date:</p><hr>
+
+    <!-- exp4 -->
+    <h2>Click the button to on/off the  bulb</h2>
+    <button type="button" class="btn btn-dark" onclick="bulbOn()">On</button>
+    <button type="button" class="btn btn-dark" onclick="bulbOff()">Off</button>
+    <img id='bulb' src="images/bulb.gif" alt="bulb"><hr>
+
+    <!-- exp5 -->
+    <h2>Click the button to Change style</h2>
+    <button type="button" class="btn btn-dark" onclick="changeStyle()">Change Style</button>
+    <p id="cs">Hello World</p><hr>
+
+    <!-- exp6 -->
+    <h2>Click the button to show/hide text</h2>
+    <button type="button" class="btn btn-dark" onclick="showText()">Show Text</button>
+    <button type="button" class="btn btn-dark" onclick="hideText()">Hide Text</button>
+    <p id="sh"></p><hr>
+
+    <!-- exp7 -->
+    <h2>Click the button to Change fontsize</h2>
+    <button type="button" class="btn btn-dark" onclick="changeFont()">Change Style</button>
+    <p id="cf">Hello World</p><hr>  
+     
+    <!-- exp8 -->
+    <h2>Check the summation of 5 & 2</h2>
+    <button type="button" class="btn btn-dark" onclick="checkSum()">Check Sum</button>
+    <p id="chs"></p><hr> 
+
+    <!-- exp9 -->
+    <h2>Check the subtraction of 5 & 2</h2>
+    <button type="button" class="btn btn-dark" onclick="checkSub()">Check Sub</button>
+    <p id="chsb"></p><hr> 
+
+    <!-- exp10 -->
+    <h2>Check the multiplication of 5 & 2</h2>
+    <button type="button" class="btn btn-dark" onclick="checkMul()">Check Mul</button>
+    <p id="cm"></p><hr>
+
+    <!-- exp11 -->
+    <h2>Check the Division of 5 & 2</h2>
+    <button type="button" class="btn btn-dark" onclick="checkDiv()">Check Div</button>
+    <p id="cd"></p><hr>
+
+    <!-- exp12 -->
+    <h2>Check the Reminder of 5 & 2</h2>
+    <button type="button" class="btn btn-dark" onclick="checkRem()">Check Reminder</button>
+    <p id="cr"></p><hr>
+
+    <!-- exp13 -->
+    <h2>Click "Try it" to call a function with arguments</h2>
+    <button type="button" class="btn btn-dark" onclick="myFunction('Sadia','Student')">Try it</button>
+    <p id="pm"></p><hr>
+
+    <!-- exp14 -->
+    <h2>25 degree celcius to farenheight</h2>
+    <button type="button" class="btn btn-dark" onclick="convertDegree()">Conver c to f</button>
+    <p id="cdg"></p><hr> 
+
+    <!-- exp15 -->
+    <h2>77 degree farenheight to celcius</h2>
+    <button type="button" class="btn btn-dark" onclick="convertCel()">Conver f to c</button>
+    <p id="cdf"></p><hr> 
+
+    <!-- exp16 -->
+    <h2>Check the incremented value of 2</h2>
+    <button type="button" class="btn btn-dark" onclick="checkInc()">Check Increment</button>
+    <p id="ci"></p><hr>
+
+    <!-- exp17 -->
+    <h2>Check the decremented value of 2</h2>
+    <button type="button" class="btn btn-dark" onclick="checkDec()">Check Decrement</button>
+    <p id="cdec"></p><hr>
+    
+    <!-- exp18 -->
+    <h2>Find max of 0, 150, 30, 20, -8, -200</h2>
+    <button type="button" class="btn btn-dark" onclick="checkMax()">Check Maximum</button>
+    <p id="ma"></p><hr>
+
+    <!-- exp19 -->
+    <h2>Find min of 0, 150, 30, 20, -8, -200</h2>
+    <button type="button" class="btn btn-dark" onclick="checkMin()">Check Minimum</button>
+    <p id="mi"></p><hr>
+
+    <!-- exp20 -->
+    <h2>Check the absolute value of -4.7</h2>
+    <button type="button" class="btn btn-dark" onclick="checkAbs(-4.7)">Check Absolute</button>
+    <p id="ab"></p>
+
+    <!-- exp21 -->
+    <h2>JavaScript</h2>
+    <p>When adding a number and a string, JavaScript will treat the number as a string.</p>
+    <button type="button" class="btn btn-dark" onclick="numstr()">Check NumStr</button>
+    <p id="ns"></p>
+
+    <!-- exp22 -->
+    <h2>JavaScript Data Types</h2>
+    <p>JavaScript has dynamic types. This means that the same variable can be used to hold different data types:</p>
+    <button type="button" class="btn btn-dark" onclick="UpdateVar()">Check Update</button>
+    <p id="demo"></p>
+
+    <!-- exp23 -->
+    <h1>JavaScript Variables</h1>
+    <p>In this example, x, y, and z are variables.</p>
+    <button type="button" class="btn btn-dark" onclick="Sum(5,6)">Sum </button>
+    <p id="s"></p>
+
+    <!-- exp24 -->
+    <h1>JavaScript Variables</h1>
+    <p>In this example, price1, price2, and total are variables.</p>
+    <button type="button" class="btn btn-dark" onclick="checkPrice(5,6)">Sum </button>
+    <p id="p"></p>
+
+    <!-- Example 25: Change Background Color -->
+    <h2>Change Background Color</h2>
+    <button onclick="changeBgColor()">Change Background Color</button>
+    <button onclick="resetBgColor()">Reset Background Color</button><hr>
+
+    <!-- Example 26: Change Image -->
+    <h2>Change Image</h2>
+    <button onclick="changeImage()">Change Image</button>
+    <button onclick="resetImage()">Reset Image</button>
+    <img id="img" src="images/bulb.gif" alt="Image" width="200"><hr>
+
+    <!-- Example 27: Show Alert Message -->
+    <h2>Show Alert Message</h2>
+    <button onclick="showAlert()">Show Alert</button><hr>
+
+    <!-- Example 28: Display User Input -->
+    <h2>Display User Input</h2>
+    <input type="text" id="userInput" placeholder="Enter text">
+    <button onclick="displayInput()">Display Input</button>
+    <p id="output"></p><hr>
+
+    <!-- Example 29: Change Button Text -->
+    <h2>Change Button Text</h2>
+    <button id="btn" onclick="changeButtonText()">Click Me</button><hr>
+
+    <!-- Example 30: Toggle Visibility -->
+    <h2>Toggle Visibility</h2>
+    <button onclick="toggleVisibility()">Toggle Text</button>
+    <p id="toggleText">This text will toggle visibility.</p><hr>
+
+    <!-- Example 31: Add Text Content -->
+    <h2>Add Text Content</h2>
+    <button onclick="addText()">Add Text</button>
+    <button onclick="clearText()">Clear Text</button>
+    <p id="addText">Initial Text.</p><hr>
+
+    <!-- Example 32: Change Text Color -->
+    <h2>Change Text Color</h2>
+    <button onclick="changeTextColor()">Change Text Color</button>
+    <p id="colorText">This text will change color.</p><hr>
+
+    <!-- Example 33: Change Font Size -->
+    <h2>Change Font Size</h2>
+    <button onclick="changeFontSize()">Change Font Size</button>
+    <p id="fontSizeText">This text will change size.</p><hr>
+
+    <!-- Example 34: Hide/Show an Image -->
+    <h2>Hide/Show an Image</h2>
+    <button onclick="hideImage()">Hide Image</button>
+    <button onclick="showImage()">Show Image</button>
+    <img id="hideImg" src="images/onbulb.gif" alt="Image Example" width="200"><hr>
+
+    <!-- Example 35: Change Paragraph Alignment -->
+    <h2>Change Paragraph Alignment</h2>
+    <button onclick="alignTextLeft()">Align Left</button>
+    <button onclick="alignTextRight()">Align Right</button>
+    <p id="alignText">This text will align differently.</p><hr>
+
+    <!-- Example 36: Update Date -->
+    <h2>Update Date</h2>
+    <button onclick="updateDate()">Show Date</button>
+    <p id="date">Date will appear here.</p><hr>
+
+    <!-- Example 37: Add Two Numbers -->
+    <h2>Add Two Numbers</h2>
+    <input type="number" id="num1" placeholder="Number 1">
+    <input type="number" id="num2" placeholder="Number 2">
+    <button onclick="addNumbers()">Add</button>
+    <p id="sum">Sum will appear here.</p><hr>
+
+    <!-- Example 38: Subtract Two Numbers -->
+    <h2>Subtract Two Numbers</h2>
+    <input type="number" id="num1" placeholder="Number 1">
+    <input type="number" id="num2" placeholder="Number 2">
+    <button onclick="subtractNumbers()">Subtract</button>
+    <p id="result">Result will appear here.</p><hr>
+
+    <!-- Example 39: Change Text Background Color -->
+    <h2>Change Text Background Color</h2>
+    <button onclick="changeTextBgColor()">Change Text Background</button>
+    <p id="textBg">This text will have a background color.</p><hr>
+
+    <!-- Example 40: Count Button Clicks -->
+    <h2>Count Button Clicks</h2>
+    <button onclick="countClicks()">Click Me</button>
+    <p id="clickCounter">Button clicked 0 times.</p><hr>
+
+    <!-- Example 41: Show Current Time -->
+    <h2>Show Current Time</h2>
+    <button onclick="showTime()">Show Time</button>
+    <p id="time">Time will appear here.</p><hr>
+
+    <!-- Example 42: Capitalize Input Text -->
+    <h2>Capitalize Input Text</h2>
+    <input type="text" id="textInput" placeholder="Enter text">
+    <button onclick="capitalizeText()">Capitalize</button>
+    <p id="capitalizedText"></p><hr>
+
+    <!-- Example 43: Small Input Text -->
+    <h2>Small Input Text</h2>
+    <input type="text" id="textIn" placeholder="Enter text">
+    <button onclick="smallText()">Small</button>
+    <p id="smallText"></p><hr>
+
+    <!-- Example 44: Change List Item -->
+    <h2>Change List Item</h2>
+    <button onclick="changeListItem()">Change List Item</button>
+    <ul>
+        <li id="listItem">Original List Item</li>
+    </ul><hr>
+
+<!-- Example 45: Change List Item -->
+    <h2>Bold</h2>
+    <button onclick="boldText()">Bold</button>
+    <p id="bold">This text will bold </p>
+    <hr>
+
+    <!-- Example 46: Change List Item -->
+    <h2>Italic</h2>
+    <button onclick="italicText()">Italic</button>
+    <p id="italic">This text will italic</p>
+    <hr>
+
+    <!-- Example 47: Change List Item -->
+    <h2>Underline</h2>
+    <button onclick="underlineText()">Underline</button>
+    <p id="under">This text will underline</p>
+    <hr>
+
+    <!-- 48 -->
+    <h2>Display Square of a Number</h2>
+    <input type="number" id="squareInput" placeholder="Enter a number">
+    <button onclick="showSquare()">Show Square</button>
+    <p id="squareResult">Square will appear here.</p>
+    <hr>
+
+
+  </div>
+  
+
+
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
